@@ -17,16 +17,16 @@
             color: #333;
             display: flex;
             flex-direction: column;
-            min-height: 100dvh;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            min-height: 100vh;
+            overflow-x: hidden;
         }
         .header {
             background: #4CAF50;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
             width: 100%;
-            box-sizing: border-box; /* Ensure padding is included in width */
+            box-sizing: border-box;
         }
         .container {
             flex: 1;
@@ -35,18 +35,20 @@
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box; /* Ensure padding is included in width */
+            box-sizing: border-box;
         }
         .title {
-            font-size: 2em;
-            margin-bottom: 10px;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #4CAF50;
         }
         .subtitle {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+            font-size: 1.5em;
+            margin-bottom: 30px;
         }
         .content {
-            line-height: 1.6;
+            line-height: 1.8;
+            font-size: 1.1em;
         }
         .footer {
             text-align: center;
@@ -54,10 +56,22 @@
             background: #333;
             color: #fff;
             width: 100%;
-            box-sizing: border-box; /* Ensure padding is included in width */
+            box-sizing: border-box;
         }
         a {
             color: #4CAF50;
+        }
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .location-list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .location-list li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -67,20 +81,20 @@
 </div>
 <div class="container">
     <div class="title">Welcome to Handy Home Hosts!</div>
-    <div class="subtitle">Your Local Short-Term Rental Management Solution</div>
+    <div class="subtitle">Your Local Short-Term Rental Management Experts</div>
     <div class="content">
-        <p>We provide comprehensive management services for your short-term rental properties. Our team handles everything from guest communications and bookings to maintenance and cleaning, ensuring a seamless experience for both you and your guests.</p>
-        <p>Why choose us?</p>
+        <p>At <span class="highlight">Handy Home Hosts</span>, we offer comprehensive management services for your short-term rental properties. From guest communications and bookings to maintenance and cleaning, we ensure a seamless experience for both you and your guests.</p>
+        <p>Our services are designed to provide:</p>
         <ul>
             <li>Local expertise and hands-on support</li>
             <li>Technical solutions for easy management</li>
             <li>Focus on maximizing your rental income</li>
         </ul>
-        <p>We proudly serve the following areas:</p>
-        <ul>
-            <li>East LA</li>
-            <li>San Luis Obispo</li>
-            <li>Ennis</li>
+        <p>We proudly serve property owners with local expertise and presence in the following areas:</p>
+        <ul class="location-list">
+            <li><span class="highlight">East Los Angeles, California</span></li>
+            <li><span class="highlight">San Luis Obispo, California</span></li>
+            <li><span class="highlight">Ennis, Montana</span></li>
         </ul>
         <p>If you have any questions or want to get in touch, feel free to email us at <a href="mailto:adam@handyhomehosts.com">adam@handyhomehosts.com</a>.</p>
     </div>
